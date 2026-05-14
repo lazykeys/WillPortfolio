@@ -4,3 +4,38 @@
     --color2: #ffe14b;
     --color3: #cd17ff;
 }
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.hero {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/BANNER\ IMAGE.GIF);
+    background-position: center 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+}
+
+.link-icons {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color2);
+    gap: 10%;
+    list-style-type: none;
+}
+
+.section-image {
+    width: auto;
+    height: 40vh;
+}
