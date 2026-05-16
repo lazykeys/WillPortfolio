@@ -130,8 +130,8 @@ main {
     font-weight: bold;
     text-decoration: none;
     color: var(--color1);
-    background-color: #07070795;
-    padding: 7px;
+    background-color: #26282e;
+    padding: 5px;
     border: 5px solid var(--black);
-    border-radius: 30px;
+    border-radius: 10px;
 }
