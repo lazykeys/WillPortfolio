@@ -3,10 +3,24 @@
     --color1: #ff4491;
     --color2: #ffe14b;
     --color3: #cd17ff;
+    --clr1: #ff7ab2;
+    --clr2: #ffe877;
+    --clr3: #e279ff;
+    --black: #070707;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html {
-    background-color: var(--color2);
+    /* checkered pattern */
+    --u:  2.5vmin;	
+	--pz: calc(var(--u) * 0.65), #fff0 calc(calc(var(--u) * 0.65) + 1px);
+    --gp: 50%/ calc(var(--u) * 10) calc(var(--u) * 10);
+    height: 100%;
+	background:
+		conic-gradient(from 0deg at 50% 50%, var(--clr1) 0 25%, var(--clr2) 0 50%, var(--clr1) 0 75%, var(--clr2) 0 100%) var(--gp);
+    
+    /* background: linear-gradient(0deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); */
 }
 
 body {
@@ -26,8 +40,9 @@ main {
     gap: 2rem;
 }
 
+/* title banner */
 .hero {
-    height: 10vh;
+    height: 12vh;
     width: 100%;
     margin-bottom: 1vh;
     display: flex;
@@ -44,6 +59,10 @@ main {
 
 .hero-title {
     font-size: clamp(1.5rem, calc(7vw + 1rem), 4rem);
+    border: 4px solid var(--black);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #07070790;
 }
 
 .link-svg {
@@ -110,5 +129,9 @@ main {
     margin-top: 0.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: var(--color3);
+    color: var(--color1);
+    background-color: #07070795;
+    padding: 7px;
+    border: 5px solid var(--black);
+    border-radius: 30px;
 }
